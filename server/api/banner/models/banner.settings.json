@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "banners",
+  "info": {
+    "name": "Banner"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Imagem": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Titulo": {
+      "type": "string"
+    },
+    "Descricao": {
+      "type": "text"
+    }
+  }
+}
