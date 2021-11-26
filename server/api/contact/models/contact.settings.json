@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "contacts",
+  "info": {
+    "name": "Contato",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Telefone": {
+      "type": "biginteger"
+    },
+    "Cidade": {
+      "type": "string"
+    },
+    "Assunto": {
+      "type": "text"
+    }
+  }
+}

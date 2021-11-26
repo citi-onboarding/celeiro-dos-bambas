@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "impacts",
+  "info": {
+    "name": "Impacto",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Descricao": {
+      "type": "text"
+    },
+    "Imagens": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Numero1": {
+      "type": "biginteger"
+    },
+    "Numero2": {
+      "type": "biginteger"
+    },
+    "Descricao1": {
+      "type": "text"
+    },
+    "Descricao2": {
+      "type": "text"
+    }
+  }
+}
