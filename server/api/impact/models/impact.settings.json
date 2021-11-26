@@ -27,17 +27,19 @@
       "required": false,
       "pluginOptions": {}
     },
-    "Numero1": {
-      "type": "biginteger"
-    },
-    "Numero2": {
-      "type": "biginteger"
-    },
     "Descricao1": {
-      "type": "text"
+      "type": "string"
     },
     "Descricao2": {
-      "type": "text"
+      "type": "string"
+    },
+    "Numero1": {
+      "type": "string",
+      "regex": "^\\(?[1-9]{2}\\)? ?(?:[2-8]|9[1-9])[0-9]{3}\\-?[0-9]{4}$"
+    },
+    "Numero2": {
+      "type": "string",
+      "regex": "^\\(?[1-9]{2}\\)? ?(?:[2-8]|9[1-9])[0-9]{3}\\-?[0-9]{4}$"
     }
   }
 }
