@@ -1,0 +1,28 @@
+{
+  "name": "Strapi and ReactJs Boilerplate",
+  "description": "A Strapi and ReactJs Boilerplate for CITi Onboarding projects.",
+  "repository": "https://github.com/citi-onboarding/boilerplate-strapi-react",
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "image": "heroku/nodejs",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "CLOUDINARY_NAME": {
+      "description": "Cloud name of your Cloudinary account",
+      "required": "true"
+    },
+    "CLOUDINARY_KEY": {
+      "description": "Cloudinary API Key",
+      "required": "true"
+    },
+    "CLOUDINARY_SECRET": {
+      "description": "Cloudinary API Secret",
+      "required": "true"
+    }
+  }
+}
