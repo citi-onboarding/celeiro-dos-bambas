@@ -2,48 +2,24 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/impacts",
-      "handler": "impact.find",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/impacts/count",
-      "handler": "impact.count",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/impacts/:id",
-      "handler": "impact.findOne",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "POST",
-      "path": "/impacts",
-      "handler": "impact.create",
+      "path": "/change",
+      "handler": "change.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/impacts/:id",
-      "handler": "impact.update",
+      "path": "/change",
+      "handler": "change.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/impacts/:id",
-      "handler": "impact.delete",
+      "path": "/change",
+      "handler": "change.delete",
       "config": {
         "policies": []
       }
