@@ -1,0 +1,63 @@
+{
+  "kind": "singleType",
+  "collectionName": "changes",
+  "info": {
+    "name": "Impacto",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FotosCarrossel": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Description1": {
+      "type": "text"
+    },
+    "Number1": {
+      "type": "string",
+      "regex": "^\\(?[1-9]{2}\\)? ?(?:[2-8]|9[1-9])[0-9]{3}\\-?[0-9]{4}$"
+    },
+    "Number2": {
+      "type": "string",
+      "regex": "^\\(?[1-9]{2}\\)? ?(?:[2-8]|9[1-9])[0-9]{3}\\-?[0-9]{4}$"
+    },
+    "DescriptionNumber1": {
+      "type": "string"
+    },
+    "DescriptionNumber2": {
+      "type": "string"
+    },
+    "Description2": {
+      "type": "text"
+    },
+    "Description3": {
+      "type": "text"
+    },
+    "FotoHow": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
