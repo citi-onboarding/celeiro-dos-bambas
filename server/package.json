@@ -1,8 +1,8 @@
 {
-  "name": "strapi-and-reactjs-boilerplate",
+  "name": "strapi-boilerplate",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi and ReactJs Boilerplate for CITi Onboarding projects.",
+  "description": "A Strapi Boilerplate for CITi Onboarding projects.",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -16,7 +16,7 @@
     "knex": "^0.95.14",
     "pg": "^8.7.1",
     "pg-connection-string": "^2.5.0",
-    "sqlite3": "latest",
+    "sqlite3": "5.0.2",
     "strapi": "3.6.8",
     "strapi-admin": "3.6.8",
     "strapi-connector-bookshelf": "3.6.8",
