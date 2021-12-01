@@ -2,11 +2,55 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 100%;
+
+
+}
+.main{
+  background-image: url(../../assets/fundo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+.fundo {
+  z-index: 0;
+  width: 100%;
+  height: auto;
 }
 
-div{
-  color:red;
-}
-.minha{
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
+}
+
+.information {
+  display: grid;
+  gap: 0.5rem;
+  height: 10rem;
+}
+.information img {
+  width: 94px;
+  height: auto;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.socialMedia img {
+  width: 48px;
+  height: 48px;
+}
+
+.citiText {
+display: flex;
+flex-direction: row;
+}
+.citiText img {
+  width: 29px;
+  height: auto;
 }
