@@ -3,7 +3,7 @@ import miniLogo from "./miniLogo.svg";
 import logoCeleiro from "./logo-celeiro.png";
 import fundo from "./fundo.png";
 import instagramButton from "./instagramButton.svg";
-import linkedinButton from "./linkedinButton.svg";
+import youtubeButton from "./youtubeButton.svg";
 import facebookButton from "./facebookButton.svg";
 
 export {
@@ -12,6 +12,6 @@ export {
   fundo,
   logoCeleiro,
   instagramButton,
-  linkedinButton,
+  youtubeButton,
   facebookButton,
 };
