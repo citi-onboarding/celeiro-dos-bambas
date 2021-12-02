@@ -5,17 +5,7 @@ import { Logo } from '../../assets'
 const Footer = () => {
   return (
     <div className={styles.minha}>
-      <p>
-        Made with
-        {' '}
-        <strong>&lt; &#x0002F; &gt;</strong>
-        {' '}
-        and
-        {' '}
-        <strong>&hearts;</strong>
-        {' '}
-        by <img src={Logo} alt="" />
-      </p>
+
     </div>
   )
 }
