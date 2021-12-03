@@ -51,7 +51,7 @@ function Contact(){
           <textarea className={styles.message} id="message" name="message" rows="6" value={message} required
            onChange={(e) => { setMessage(e.target.value); }} ></textarea>
           <div className={styles.submitMessageButtonArea}>
-            <input className={styles.submitMessageButton} type="submit" value="Enviar" />
+            <button className={styles.submitMessageButton} type="submit" >Enviar</button>
           </div>
         </form>
       </div>

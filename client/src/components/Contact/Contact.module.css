@@ -120,6 +120,7 @@
   width: 100%;
   margin-bottom: 1rem;
   padding: 4px;
+  font-family: 'Sora', sans-serif;
 }
 
 .message {
@@ -128,6 +129,7 @@
   height: 30%;
   resize: none;
   padding: 4px;
+  font-family: 'Sora', sans-serif;
 }
 
 .submitMessageButtonArea {
@@ -146,4 +148,9 @@
   padding: 0.3rem 1rem;
   color: #383D43;
   background-color: white;
+}
+
+.submitMessageButton:hover {
+  background-color: #131946;
+  color: white;
 }
