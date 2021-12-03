@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
 /***********************/
 /* All Contact Section */
 /***********************/
@@ -6,6 +8,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-family: 'Sora', sans-serif;
 }
 
 .allContent {
@@ -35,22 +38,29 @@
   position: absolute;
   background-color: white;
   border-bottom-right-radius: 20%;
-  width: 50%;
+  width: 55%;
   height: 45%;
   top: 0;
 }
 
 .textDonate {
-  font-size: larger;
+  font-size: 21px;
+  margin: 1.5rem 1rem 2rem;
 }
 
 .buttonDonate {
+  margin-left: 1rem;
   text-decoration: none;
   color: white;
   background-color: #131946;
-  padding: 0.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 1rem;
   font-size: small;
+  font-weight: lighter;
+}
+
+.iconHeart {
+  width: 12px;
 }
 
 .blueBox {
@@ -73,7 +83,7 @@
   width: 2px;
   height: auto;
   border-left: black 1px solid;
-  margin: 0 1rem;
+  margin: 1.5rem 0rem;
   border-color: #C7C7C7;
 }
 
@@ -90,7 +100,7 @@
   font-weight: normal;
   text-align: center;
   font-size: x-large;
-  margin: 0 0 2rem;
+  margin: 1.5rem 15%;
 }
 
 .form {
@@ -102,13 +112,14 @@
 .descriptionMessage {
   display: block;
   font-size: small;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
   color: #383D43;
 }
 
 .email {
   width: 100%;
   margin-bottom: 1rem;
+  padding: 4px;
 }
 
 .message {
@@ -116,6 +127,7 @@
   width: 100%;
   height: 30%;
   resize: none;
+  padding: 4px;
 }
 
 .submitMessageButtonArea {
