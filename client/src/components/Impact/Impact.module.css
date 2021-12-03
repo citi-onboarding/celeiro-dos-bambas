@@ -74,13 +74,13 @@ body{
 }
 
 .title_commun{
-  display: flex;
+
   font-family: "Montserrat";
   font-style: "regular";
   font-weight: 900;
   font-size: 90px;
   color: #131946;
-  align-items: center;
+
 }
 
 .text_commun{
@@ -90,7 +90,6 @@ body{
   font-weight: 400;
   font-size: 18px;
   color: #363636;
-  max-width: 1000px;
 
 }
 
