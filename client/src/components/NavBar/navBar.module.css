@@ -74,7 +74,19 @@
   font-weight: 600;
   color: #131946;
 
+
 }
+
+a{
+  border-bottom: -4px solid currentColor; /* Or whatever color you want */
+  text-decoration: none;
+  background: white;
+  z-index: 999999;
+
+
+}
+
+
 
 .LogoNav {
 

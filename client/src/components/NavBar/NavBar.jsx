@@ -27,10 +27,10 @@ function NavBar( {menu, setMenu} ) {
             </div>
 
             <ul className={styles.NavBarList}>
-              <li>A associação</li>
+              <li><a className = {styles.Select}>A associação</a></li>
               <li >Impacto</li>
               <li >Parceiros</li>
-              <li>Contato</li>
+              <li >Contato</li>
               <li><a className={styles.buttonDonate} href="">Doe Agora ♥</a></li>
             </ul>
 
