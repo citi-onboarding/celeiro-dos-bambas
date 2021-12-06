@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+  background-color: #131946;
+}
+
+#Navbar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  left: 50%;
+  top: -0.005%;
+  align-items: center;
+  transform: translateX(-50%);
+  height: 10rem;
+  width: 100vw;
+  z-index: 9999;
+  background: white;
+}
+
+.Menu {
+  display: flex;
+  position: relative;
+  width: 90vw;
+  justify-content: space-between;
+  z-index: 10;
+  background: white;
+}
+
+.NavBarList {
+  background: white;
+  display: flex;
+  align-items: center;
+  font-family: Sora, sans-serif;;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: regular;
+  vertical-align: top;
+  margin-right: 4%;
+  color: #222222;
+}
+
+.NavBarList li{
+  background: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 2rem;
+  height: 100%;
+  cursor: pointer;
+}
+.buttonDonate {
+  text-decoration: none;
+  color: white;
+  background-color: #131946;
+  padding: 0.00001px 32px;
+  border-radius: 3rem;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.NavBarList li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+
+}
+
+.NavBarList li:hover {
+  /*background: rgba(255, 255, 255, 0.2);*/
+  border-radius: .3rem;
+  transition: all 0.3s ease-out;
+  font-weight: 600;
+  color: #131946;
+
+}
+
+.LogoNav {
+
+  width: 87px;
+  height: 89px;
+  margin-left: 10%;
+}
+
+.LogoImg{
+  background: white;
+}
+
+.MenuResponsive,
+.Bars {
+  display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked {
+  display: none;
+}
+
+
+
+@media  screen and (max-width: 1000px){
+  .NavBarList li a{
+    font-size: 1.8rem;
+  }
+}
+
+@media  screen and (max-width: 768px){
+  .Bars {
+    display: block;
+    position: absolute;
+    height: 4.1rem;
+    width: 4.1rem;
+    top: 0;
+    right: 0;
+    transform: translate(0, 25%);
+    cursor: pointer;
+  }
+
+  input[type=checkbox]:checked ~ #Navbar{
+    background: transparent;
+  }
+
+  input[type=checkbox]:checked ~ #Navbar .LogoNav img{
+    display: none;
+  }
+
+  .NavBarList {
+    display: none;
+  }
+
+
+/****************************************************/
+
+  .MenuResponsive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 75%;
+    height: 100vh;
+    right: -100%;
+    top: 0;
+    z-index: 0;
+    padding: 7rem 2.5rem 7rem 0;
+    background: linear-gradient(270deg, #1F1F1F 16.56%, rgba(31, 31, 31, 0.92) 87.46%);
+    border-radius: 30px 0px 0px 30px;
+    border-radius: 5rem 0 0 5rem;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    transition: all .5s ease;
+  }
+
+  input[type=checkbox]:checked ~ #Navbar .MenuResponsive{
+    right: 0;
+    opacity: 1;
+    transition: all .5s ease;
+  }
+
+  .MenuResponsiveList {
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    width: 90%;
+    height: 60%;
+    justify-content: space-evenly;
+  }
+
+  .MenuResponsiveList li {
+    display: flex;
+    text-decoration: none;
+    justify-content: flex-end;
+    transition: all .5s linear;
+    cursor: pointer;
+    font-size: 2.74rem;
+    font-weight: 700;
+    height: 8rem;
+    border-radius: 1rem;
+    align-items: center;
+    text-align: end;
+    right: 5%;
+  }
+
+  .MenuResponsiveList li a {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+  }
+
+  .MenuResponsiveList li:hover {
+    text-decoration: underline;
+    border-right: 5px solid #4A1F1F;
+    z-index: 60;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.2) 90.56%, rgba(255, 255, 255, 0.2) 30.46%);
+  }
+
+  .MenuResponsiveList li:hover {
+    text-decoration: underline;
+  }
+
+  .MoreContent {
+    display: flex;
+    position: absolute;
+    font-size: 2.6rem;
+    font-weight: 500;
+    background: #4A1F1F;
+    justify-content:center;
+    align-items: center;
+    width: 80%;
+    height: 10rem;
+    text-decoration: none;
+    cursor: pointer;
+    right: 0;
+    top: 80%;
+    padding: 0 2rem;
+    border-radius: 3.2rem 0 0 3.2rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .MoreContent a{
+    position: relative;
+  }
+
+  .MoreContent a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.3rem;
+    background: #BDBDBD;
+    transition: all 1s ease;
+  }
+
+  .MoreContent a:hover::before {
+    width: 100%;
+
+  }
+}
