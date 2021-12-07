@@ -19,22 +19,22 @@ function NavBar( {menu, setMenu} ) {
 
   return (
     <div>
-      <input type="checkbox" className={styles.checkMode} id="check"/>
+
       <header className="fontNavbar" id={styles.Navbar}>
           <nav className={`container ${styles.Menu}`}>
             <div className={styles.LogoNav}>
               <img className={styles.LogoImg} src = {Logo} alt="Logo Celeiro"/>
             </div>
 
+            <div className={styles.UlButton}>
             <ul className={styles.NavBarList}>
-              <li><a className = {styles.Select}>A associação</a></li>
-              <li >Impacto</li>
-              <li >Parceiros</li>
-              <li >Contato</li>
-              <li><a className={styles.buttonDonate} href="">Doe Agora ♥</a></li>
+              <li><a className = {styles.Assoc} href= "#Associacao" >A associação</a></li>
+              <li ><a className = {styles.Impac} href= "#Impacto" >Impacto</a></li>
+              <li ><a className = {styles.Parc} href= "#Parceiro" >Parceiros</a></li>
+              <li ><a className = {styles.Contat} href= "#Contato" >Contato</a></li>
             </ul>
-
-
+             <a className={styles.buttonDonate} href="">Doe Agora ♥</a>
+             </div>
           </nav>
 
 
