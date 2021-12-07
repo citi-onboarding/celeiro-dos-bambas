@@ -1,1 +1,14 @@
+<<<<<<< HEAD
 
+=======
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+  font-family: Sora, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+>>>>>>> 122a89cd9a7a547ca7c9c4bad9d0f802dd6f5f73

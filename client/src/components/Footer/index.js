@@ -1,1 +1,1 @@
-export { defalt } from "./Footer"; //so vai mudar o "./seu componente"
+export { default } from "./Footer"; //so vai mudar o "./seu componente"
