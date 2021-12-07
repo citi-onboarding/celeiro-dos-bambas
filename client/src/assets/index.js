@@ -17,7 +17,9 @@ import vector1 from './vector1.png'
 import vector2 from './vector2.png'
 import vector3 from './vector3.png'
 import vector4 from './vector4.png'
-import Logo from "./logo.png";
+import contactImage from './contact.jpg';
+import iconHeart from './icon_heart.png';
+
 import miniLogo from "./miniLogo.svg";
 import logoCeleiro from "./logo-celeiro.png";
 import fundo from "./fundo.png";
@@ -26,8 +28,9 @@ import youtubeButton from "./youtubeButton.svg";
 import facebookButton from "./facebookButton.svg";
 
 export {
-  Logo,
   miniLogo,
+  contactImage,
+  iconHeart,
   fundo,
   logoCeleiro,
   instagramButton,
