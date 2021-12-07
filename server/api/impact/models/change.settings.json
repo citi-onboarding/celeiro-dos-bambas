@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "FotosCarrossel": {
+    "FotoGrande": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -24,16 +24,14 @@
       "required": false,
       "pluginOptions": {}
     },
-    "Description1": {
+    "DescriptionRight": {
       "type": "text"
     },
     "Number1": {
-      "type": "string",
-      "regex": "^\\(?[1-9]{2}\\)? ?(?:[2-8]|9[1-9])[0-9]{3}\\-?[0-9]{4}$"
+      "type": "string"
     },
     "Number2": {
-      "type": "string",
-      "regex": "^\\(?[1-9]{2}\\)? ?(?:[2-8]|9[1-9])[0-9]{3}\\-?[0-9]{4}$"
+      "type": "string"
     },
     "DescriptionNumber1": {
       "type": "string"
@@ -41,13 +39,13 @@
     "DescriptionNumber2": {
       "type": "string"
     },
-    "Description2": {
+    "DescriptionLeft": {
       "type": "text"
     },
-    "Description3": {
-      "type": "text"
+    "TitleRight": {
+      "type": "string"
     },
-    "FotoHow": {
+    "FotoPequena": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -58,6 +56,9 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "TitleLeft": {
+      "type": "string"
     }
   }
 }
