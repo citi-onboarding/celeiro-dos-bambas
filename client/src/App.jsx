@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import {Footer} from './components/index'; //importa do index da pasta componentes, é só colocar o nome do seu ai ex {Footer, NavBar}
+import {Banner,} from './components/index'; //importa do index da pasta componentes, é só colocar o nome do seu ai ex {Footer, NavBar}
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
 
 
 
-      <Footer/>
+      <Banner/>
   </div>
 )
   }
