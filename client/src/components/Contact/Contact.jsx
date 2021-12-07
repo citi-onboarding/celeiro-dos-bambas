@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { contactImage, iconHeart } from '../../assets'
+
 import styles from "./Contact.module.css";
 import apiAxios from '../../services/api-axios';
 
 
 function Contact(){
-
-
 
   const [emailCeleiro, setEmailCeleiro] = useState('');
   const [emailClient, setEmailClient] = useState('');
@@ -25,6 +24,7 @@ function Contact(){
     loadEmailCeleiro();
   }, []);
 
+  // Front
   return (
     <div className={styles.Contact}>
     <div className={styles.allContent}>
@@ -41,6 +41,7 @@ function Contact(){
 
       <div className={styles.verticalLine}></div>
 
+      {/* Forms */}
       <div className={styles.rightArea}>
         <h3 className={styles.titleMessage}>Entre em contato conosco</h3>
         <form className={styles.form} onSubmit={sendEmail} >
