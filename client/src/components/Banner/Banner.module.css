@@ -14,13 +14,16 @@
 }
 
 .backImageMask{
+  width: 100%;
+  background-size: cover;
   z-index: 10;
   position: fixed;
   background: linear-gradient(180deg, rgba(40, 53, 146, 0.4) -1.57%, rgba(19, 25, 70, 0.4) 131.14%);
 }
 
 .backImageBanner{
-
+  width: 100%;
+  background-size: cover;
 
 }
 
@@ -32,16 +35,19 @@
   align-items: center;
   justify-items: center;
   flex-direction: column;
+  margin-bottom: 155px;
+
 }
 
 .title{
 
 
-  font-family: Lexend Deca !important;
+  font-family: 'Lexend Deca' !important;
   font-style: normal;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 24.8342px;
   text-align: center;
+
 
   color: white;
 
@@ -51,12 +57,12 @@
 
 .subTitle{
 
-  font-family: Sora;
+  font-family: 'Sora', sans-serif;
   font-style: normal;
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 36.6121px;
   text-align: center;
-
+  margin-top: 20.37px;
   color: white;
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
