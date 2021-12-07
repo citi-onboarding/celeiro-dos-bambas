@@ -33,7 +33,7 @@
   align-items: center;
   font-family: Sora, sans-serif;;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 100;
   font-style: regular;
   vertical-align: top;
   margin-right: -16%;
@@ -53,7 +53,7 @@ a{
   align-items: center;
   font-family: Sora, sans-serif;;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   font-style: regular;
   text-decoration: none;
   color: black;
@@ -80,7 +80,7 @@ a{
   height: 40px;
   width: 174px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   margin-left:30px;
 }
 
