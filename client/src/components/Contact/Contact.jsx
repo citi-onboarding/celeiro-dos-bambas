@@ -7,22 +7,20 @@ import apiAxios from '../../services/api-axios';
 
 function Contact(){
 
-  const [emailCeleiro, setEmailCeleiro] = useState('');
   const [emailClient, setEmailClient] = useState('');
   const [message, setMessage] = useState('');
 
-  const sendEmail = async () => {
-
+  const sendEmail = async (event) => {
+    try {
+      event.preventDefault()
+      await apiAxios.post("emails", {emailClient, message})
+      alert(`E-mail enviado com sucesso!`)
+      setEmailClient('')
+      setMessage('')
+    } catch (error) {
+      alert(`Error: ${error}`)
+    }
   }
-
-  const loadEmailCeleiro = async () => {
-    const res = await apiAxios.get("contact")
-    setEmailCeleiro(res.data.Email)
-  }
-
-  useEffect(() => {
-    loadEmailCeleiro();
-  }, []);
 
   // Front
   return (
