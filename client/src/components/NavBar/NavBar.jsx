@@ -1,6 +1,7 @@
 import React, { useState, useEffect  } from "react";
 import styles from "./navBar.module.css";
 import apiAxios from "../../services/api-axios";
+import { contactImage, iconHeart } from '../../assets'
 
 function NavBar( {menu, setMenu} ) {
   const [navbar, setNavBar] = useState([]);
@@ -33,7 +34,7 @@ function NavBar( {menu, setMenu} ) {
               <li ><a className = {styles.Parc} href= "#Parceiro" >Parceiros</a></li>
               <li ><a className = {styles.Contat} href= "#Contato" >Contato</a></li>
             </ul>
-             <a className={styles.buttonDonate} href="">Doe Agora ♥</a>
+             <a className={styles.buttonDonate} href="">Doe Agora <img className={styles.iconHeart} src={iconHeart} alt="emoji de coração" /></a>
              </div>
           </nav>
 
