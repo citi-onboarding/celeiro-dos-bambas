@@ -2,8 +2,8 @@ import React from "react"; //obrigatorio
 import styles from './Banner.module.css';  //importa a folha de estilos que tem que estar na mesma pasta
 import { bannerimage, mask} from '../../assets'
 
-
 function Banner() {
+
 
   return (
       <div className={styles.container}>
