@@ -1,11 +1,9 @@
 import Logo from './logo.png';
-<<<<<<< HEAD
 import bannerimage from "./bannerimage.png";
 import mask from "./mask.png";
 
-export {
-  Logo, bannerimage, mask
-=======
+
+
 import crianças from './crianças_impact.png'
 import crianças2 from './crianças_impact2.png'
 import cobrinha from './PurpleSnake.png'
@@ -58,6 +56,7 @@ export {
   vector1,
   vector2,
   vector3,
-  vector4
->>>>>>> 122a89cd9a7a547ca7c9c4bad9d0f802dd6f5f73
+  vector4,
+  bannerimage,
+  mask
 };
