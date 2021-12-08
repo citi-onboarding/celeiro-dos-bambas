@@ -41,7 +41,7 @@ function Impact(){
 
 
   return(
-  <div className = {styles.impact}>
+  <div id="Impacto" className = {styles.impact}>
     <div className= {styles.above_global}>
       <div className= {styles.global_impact}>
        <div className= {styles.infogra}>
