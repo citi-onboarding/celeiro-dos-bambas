@@ -1,12 +1,6 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
 .container {
-  padding-top: 100px;
   margin-bottom: 45.73px;
   width: 100%;
   display: flex;
