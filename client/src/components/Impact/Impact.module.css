@@ -208,28 +208,6 @@ span {
 
 }
 
-.big_kid{
-  border-bottom-right-radius: 23%;
-  border-top-left-radius: 23%;
-  width: 480px;
-  height:332px;
-  object-fit: cover;
-  margin-left: 43%;
-  margin-top:30%;
-  color: #363636;
-  font-family: "Montserrat";
-  font-style: "regular";
-}
-
-
-.ornamento1{
-  z-index: 1;
-  position: absolute;
-  margin-top: 298px;
-  margin-left:-238px;
-
-}
-
 .vector1{
   position: absolute;
   margin-top: -10px;
@@ -285,10 +263,18 @@ span {
 
 }
 
+.ornamento1{
+  z-index: 1;
+  position: absolute;
+  margin-top: 288px;
+  margin-left:-238px;
+
+}
+
 .ornamento2{
   z-index: 1;
   position: absolute;
-  margin-top: 317px;
+  margin-top: 307px;
   margin-left:-268px;
 
 }
@@ -309,15 +295,26 @@ span {
 
 }
 
-
-
 .cobrinha{
   z-index: 30;
   position:absolute;
-  margin-top: 131px;
-  margin-left:116px;
-  width: 445.5px;
-  height:43.68px;
+  margin-top: 115px;
+  margin-left:136px;
+  width: 420.5px;
+  height:58.68px;
+}
+
+.big_kid{
+  border-bottom-right-radius: 23%;
+  border-top-left-radius: 23%;
+  width: 480px;
+  height:332px;
+  object-fit: cover;
+  margin-left: 43%;
+  margin-top:30%;
+  color: #363636;
+  font-family: "Montserrat";
+  font-style: "regular";
 }
 
 .small_kid{
@@ -367,7 +364,63 @@ span {
 
   .description_esquerdo{
     margin-left: 14%;
+  }
 
+  .big_kid{
+    width: 400px;
+    height:277px;
+    margin-left: 58%;
+    margin-top:30%;
+  }
+
+  .small_kid{
+    width: 215px;
+    height: 197px;
+    margin-top:133%;
+    margin-left: -115%;
+  }
+
+  .ornamento1{
+    z-index: 1;
+    position: absolute;
+    margin-top: 240px;
+    margin-left:-148px;
+
+
+  }
+
+  .ornamento2{
+    z-index: 1;
+
+    position: absolute;
+    margin-top: 257px;
+    margin-left:-178px;
+
+  }
+
+  .elipse1{
+    z-index: 1;
+    position: absolute;
+    margin-top: 480px;
+    margin-left:60px;
+  }
+
+  .elipse2{
+    z-index: 1;
+    position: absolute;
+    margin-top: 445px;
+    margin-left:85px;
+
+
+  }
+
+  .cobrinha{
+    z-index: 30;
+    position:absolute;
+    margin-top: 95px;
+    margin-left:163px;
+    width: 340.5px;
+    height:50px;
   }
 
 }
@@ -383,8 +436,8 @@ span {
   }
 
   .description_direito{
-    width: 500px;
-    margin-left:162px;
+    width: 450px;
+    margin-left:212px;
   }
 
   .title_esquerdo{
