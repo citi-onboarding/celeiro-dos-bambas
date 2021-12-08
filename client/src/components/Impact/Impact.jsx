@@ -31,7 +31,6 @@ function Impact(){
     setOrangeText(res.data.DescriptionNumber2);
     setBigPhoto(res.data.FotoGrande[0].url);
     setSmallPhoto(res.data.FotoPequena.url);
-    console.log(res.data.FotoPequena);
   };
 
 
