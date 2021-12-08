@@ -99,6 +99,8 @@
 
 .citiText div {
   border-top: 1px solid white;
+  margin: 1rem 0;
+  padding-top: 1rem;
 }
 
 .citiText img {
