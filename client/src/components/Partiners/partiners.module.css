@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 2rem;
+  gap: 2rem;
+}
+
+.carousel {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-weight: 400;
+  font-family: Sora;
+  color: black;
+}
+
+.name {
+  font-size: 36px;
+}
+
+.description > p {
+  font-size: 20px;
+}
+
+
+.logo {
+  width: 90px;
+  height: auto;
+}
