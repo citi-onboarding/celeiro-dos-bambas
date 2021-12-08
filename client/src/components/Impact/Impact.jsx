@@ -42,7 +42,8 @@ function Impact(){
 
 
   return(
-    <div className= {styles.god}>
+    <div className= {styles.impact}>
+     <div className= {styles.above_global}>
       <div className= {styles.global_impact}>
 
        <div className= {styles.infogra}>
@@ -73,7 +74,7 @@ function Impact(){
     </div>
 
     <div className= {styles.bloco_esquerdo} >
-       <h1 className = {styles.title_esquerdo}>Como <span>impactamos</span> as<br/> comunidades</h1>
+       <h1 className = {styles.title_esquerdo}>Como <span>impactamos</span> as comunidades</h1>
        <p className = {styles.description_esquerdo}>
          {DescriptionLeft}
        </p>
@@ -94,7 +95,7 @@ function Impact(){
         </div>
        </div>
 
-
+ . . </div>
     </div>
   </div>
   );
