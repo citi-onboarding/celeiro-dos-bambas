@@ -41,14 +41,10 @@ function Impact(){
 
 
   return(
-    <div className= {styles.impact}>
-     <div className= {styles.above_global}>
+  <div className = {styles.impact}>
+    <div className= {styles.above_global}>
       <div className= {styles.global_impact}>
-
        <div className= {styles.infogra}>
-
-
-
           <div className= {styles.commun}>
                 <img className= {styles.vector1} src = {vector1} alt="Azul decorativo"></img>
                 <img className= {styles.vector2} src = {vector2} alt="Azul decorativo"></img>
@@ -96,6 +92,7 @@ function Impact(){
 
  . . </div>
     </div>
+   </div>
   </div>
   );
 };
