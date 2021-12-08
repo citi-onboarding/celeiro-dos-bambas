@@ -1,30 +1,28 @@
 import React, { useState, useEffect } from "react";
 import { contactImage, iconHeart } from '../../assets'
+
 import styles from "./Contact.module.css";
 import apiAxios from '../../services/api-axios';
 
 
 function Contact(){
 
-
-
-  const [emailCeleiro, setEmailCeleiro] = useState('');
   const [emailClient, setEmailClient] = useState('');
   const [message, setMessage] = useState('');
 
-  const sendEmail = async () => {
-
+  const sendEmail = async (event) => {
+    try {
+      event.preventDefault()
+      await apiAxios.post("emails", {emailClient, message})
+      alert(`E-mail enviado com sucesso!`)
+      setEmailClient('')
+      setMessage('')
+    } catch (error) {
+      alert(`Error: ${error}`)
+    }
   }
 
-  const loadEmailCeleiro = async () => {
-    const res = await apiAxios.get("contact")
-    setEmailCeleiro(res.data.Email)
-  }
-
-  useEffect(() => {
-    loadEmailCeleiro();
-  }, []);
-
+  // Front
   return (
     <div className={styles.Contact}>
     <div className={styles.allContent}>
@@ -41,6 +39,7 @@ function Contact(){
 
       <div className={styles.verticalLine}></div>
 
+      {/* Forms */}
       <div className={styles.rightArea}>
         <h3 className={styles.titleMessage}>Entre em contato conosco</h3>
         <form className={styles.form} onSubmit={sendEmail} >
