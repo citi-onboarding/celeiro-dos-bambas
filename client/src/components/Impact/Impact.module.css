@@ -452,25 +452,25 @@ span {
 }
 
 
-@media (max-height : 680px){
+@media (max-height : 790px){
   .impact{
     margin-bottom: 190px;
   }
 }
 
-@media (max-height : 598px){
+@media (max-height : 668px){
   .impact{
     margin-bottom: 260px;
   }
 }
 
-@media (max-height : 515px){
+@media (max-height : 605px){
   .impact{
     margin-bottom: 360px;
   }
 }
 
-@media (max-height : 440px){
+@media (max-height : 530px){
   .impact{
     margin-bottom: 460px;
   }
