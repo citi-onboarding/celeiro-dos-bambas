@@ -36,16 +36,19 @@ function Members(){
   }
 
   // Load Members Data
-  const [members, setMembers] = useState('');
+  const [members, setMembers] = useState([]);
 
   const loadData = async () => {
-    const {data} = await apiAxios.get('membros');
-    setMembers(data.data);
+    const res = await apiAxios.get('membros');
+    setMembers(res.data);
+    let a = typeof members
+    console.log('A:')
+    console.log(a)
   };
 
   useEffect(()=>{
     loadData();
-  });
+  }, []);
 
   // Montar carrocel
   const settings = {
@@ -59,6 +62,7 @@ function Members(){
   };
   // Estilizar
 
+  // Front
   return(
     <div id="members">
       <div class='topArea'>
@@ -68,11 +72,17 @@ function Members(){
 
       <div className="carousel">
         <Slider className="slider" {...settings}>
-          {members.map((member) => {
+          {members.map( (member) => {
             return (
-              <BoxMember title="{member.Avatar}" text="{member.Nome}" link="{member.Cargo}"/>
+              <BoxMember nome={member.Nome}
+                         cargo={member.Cargo}
+                         avatar={member.Avatar.url}/>
             );
           })}
+          <p>1</p>
+          <p>2</p>
+          <p>{members.length}</p>
+
         </Slider>
       </div>
 

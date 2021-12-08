@@ -5,10 +5,10 @@ import React from 'react';
 export default class BoxMember extends React.Component{
   render(){
     return(
-      <div className="datas">
-        <h2>{this.props.title}</h2>
-        <p>{this.props.text}</p>
-        <a href={this.props.link} target="_blank">Ler o post completo</a>
+      <div className="boxMember">
+        <h2>{this.props.nome}</h2>
+        <p>{this.props.cargo}</p>
+        <img src={this.props.avatar} alt="" />
       </div>
     )
   }
