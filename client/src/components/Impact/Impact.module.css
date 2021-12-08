@@ -6,6 +6,7 @@
   justify-content: space-around;
   align-items: center;
   font-family: 'Sora', sans-serif;
+  margin-bottom: 60px;
 }
 
 .above_global {
@@ -370,20 +371,20 @@ span {
     width: 400px;
     height:277px;
     margin-left: 58%;
-    margin-top:30%;
+    margin-top:40%;
   }
 
   .small_kid{
     width: 215px;
     height: 197px;
-    margin-top:133%;
+    margin-top:143%;
     margin-left: -115%;
   }
 
   .ornamento1{
     z-index: 1;
     position: absolute;
-    margin-top: 240px;
+    margin-top: 260px;
     margin-left:-148px;
 
 
@@ -393,7 +394,7 @@ span {
     z-index: 1;
 
     position: absolute;
-    margin-top: 257px;
+    margin-top: 277px;
     margin-left:-178px;
 
   }
@@ -401,14 +402,14 @@ span {
   .elipse1{
     z-index: 1;
     position: absolute;
-    margin-top: 480px;
+    margin-top: 500px;
     margin-left:60px;
   }
 
   .elipse2{
     z-index: 1;
     position: absolute;
-    margin-top: 445px;
+    margin-top: 465px;
     margin-left:85px;
 
 
@@ -417,7 +418,7 @@ span {
   .cobrinha{
     z-index: 30;
     position:absolute;
-    margin-top: 95px;
+    margin-top: 135px;
     margin-left:163px;
     width: 340.5px;
     height:50px;
