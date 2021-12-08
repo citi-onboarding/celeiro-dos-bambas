@@ -42,7 +42,6 @@ function changePhone(phone) {
 
  const loadData = async () => {
    const {data} = await apiAxios.get('footer');
-   console.log(data);
    setAdress(data.Endereco);
    setPhone(changePhone(data.Telefone));
    setInstagram(data.Instagram);
