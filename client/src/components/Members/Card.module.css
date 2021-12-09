@@ -4,8 +4,24 @@
   border-radius: 16px;
   width: 60%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card .cardAvatar {
   width: 50%;
+  border-top-right-radius: 23%;
+  border-bottom-left-radius: 23%;
+}
+
+.cardName{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cardRole{
+  font-size: 14px;
+  font-weight: 400;
+
 }
