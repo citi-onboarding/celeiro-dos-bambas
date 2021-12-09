@@ -1,0 +1,110 @@
+.main{
+  color: white;
+  font-weight: 400;
+  background-image: url(../../assets/fundo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: auto ;
+  margin-top: 114px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+
+  padding: 16px;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1224px;
+  width: 100%;
+}
+/* -------------------------------------------- */
+.information {
+  display: grid;
+  gap: 37px;
+  width: 380px;
+  grid-template-areas:
+  "logo div";
+  justify-content: center;
+  align-items: center;
+}
+
+.information img {
+  width: 94px;
+  height: auto;
+  grid-area: logo;
+}
+
+.name {
+  grid-area: name;
+  font-weight: 600;
+  margin: 0;
+}
+
+.adress {
+  grid-area: adress;
+  margin: 0;
+}
+
+.phone {
+  grid-area: phone;
+  margin: 0;
+}
+/* -------------------------------------------------------- */
+.socialMedia {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.medias {
+  display: flex;
+  justify-content: end;
+  gap: 16px
+}
+
+.socialMedia img {
+  width: 48px;
+  height: 48px;
+  grid-area: img;
+}
+
+.text {
+  grid-area: text;
+  text-align: right;
+}
+
+.instagram {
+  grid-area: instagram;
+}
+
+.youtube {
+  grid-area: youtube;
+}
+
+.facebook {
+  grid-area: facebook;
+}
+/* -------------------------------------------------------- */
+
+.citiText {
+  display: flex;
+  width: 85%;
+  justify-content: center;
+  align-items: center;
+}
+
+.citiText div {
+  border-top: 1px solid white;
+  margin: 1rem 0;
+  padding-top: 1rem;
+}
+
+.citiText img {
+  width: 29px;
+  height: 16.5px;
+}

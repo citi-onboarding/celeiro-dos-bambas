@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+
+#Navbar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  left: 50%;
+  top: -0.005%;
+  align-items: center;
+  transform: translateX(-50%);
+  height: 9rem;
+  width: 100vw;
+  z-index: 9999;
+  background: white;
+  filter: drop-shadow(0px 2px 30px rgba(0, 0, 0, 0.3));
+}
+
+.Menu {
+  display: flex;
+  position: relative;
+  width: 90vw;
+  justify-content: space-between;
+  z-index: 10;
+  background: white;
+}
+
+.NavBarList {
+  background: white;
+  display: flex;
+  align-items: center;
+  font-family: Sora, sans-serif;;
+  font-size: 20px;
+  font-weight: 100;
+  font-style: regular;
+  vertical-align: top;
+  margin-right: -16%;
+  color: #222222;
+  scroll-behavior: smooth;
+}
+
+.UlButton{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+
+
+
+.NavBarList li{
+  background: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 2rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+.iconHeart {
+  width: 15px;
+  margin: 5%;
+}
+
+.buttonDonateNav {
+  text-decoration: none;
+  color: white;
+  background-color: #131946;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  height: 40px;
+  width: 184px;
+  font-size: 14px;
+  font-weight: 300;
+  margin-left:30px;
+  padding-left: 13px;
+}
+
+
+.NavBarList li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-weight: 200;
+  align-items: center;
+  color: #131946;
+  scroll-behavior: smooth;
+}
+
+
+.Mem:hover:after, .Mem.pt-active:after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  margin-top:139px;
+  height: 6px;
+  border-radius: 3px;
+  background:  #131946;
+
+  transition: all ease 0.2s;
+}
+
+.Impac:hover:after, .Impac.pt-active:after {
+  content: '';
+  position: absolute;
+  width: 90px;
+  margin-top:139px;
+  height: 6px;
+  border-radius: 3px;
+  background:  #131946;
+
+  transition: all ease 0.2s;
+}
+
+.Parc:hover:after, .Parc.pt-active:after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  margin-top:139px;
+  height: 6px;
+  border-radius: 3px;
+  background:  #131946;
+
+  transition: all ease 0.2s;
+}
+
+.Contat:hover:after, .Contat.pt-active:after {
+  content: '';
+  position: absolute;
+  width: 91px;
+  margin-top:139px;
+  height: 6px;
+  border-radius: 3px;
+  background:  #131946;
+  scroll-behavior: smooth;
+
+  transition: all ease 0.2s;
+}
+
+
+
+.NavBarList a:hover {
+  /*background: rgba(255, 255, 255, 0.2);*/
+  border-radius: .3rem;
+  transition: all 0.3s ease-out;
+  font-weight: 600;
+  color: #131946;
+
+
+}
+
+
+
+
+.LogoNav {
+
+  width: 87px;
+  height: 89px;
+  margin-left: 10%;
+}
+
+.LogoImg{
+  background: white;
+}
+
+.MenuResponsive,
+.Bars {
+  display: none;
+}
