@@ -11,14 +11,12 @@ import {Members} from './components/index';
 const App = () => {
   return (
     <div className="App">
-      {/*<NavBar/>*/}
-      {/*<Banner/>*/}
-      {/* <Impact/> */}
+      <NavBar />
+      <Banner />
+      <Impact />
       <Members />
-      {/* <Contact /> */}
-      {/* <Footer /> */}
-
-
+      <Contact />
+      <Footer />
     </div>
 )
   }

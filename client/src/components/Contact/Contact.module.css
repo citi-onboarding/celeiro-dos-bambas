@@ -12,6 +12,7 @@
 }
 
 .allContent {
+  width: 100%;
   display: flex;
   max-width: 1140px;
   justify-content: space-around;
@@ -22,7 +23,7 @@
 /*************/
 
 .leftArea {
-  width: 45%;
+  width: 50%;
   position: relative;
   display: inline-block;
 }
@@ -44,8 +45,9 @@
 }
 
 .textDonate {
-  font-size: 21px;
+  font-size: 30px;
   margin: 1.5rem 1rem 2rem;
+  font-weight: normal;
 }
 
 .buttonDonate {
@@ -55,12 +57,12 @@
   background-color: #131946;
   padding: 0.5rem 1.5rem;
   border-radius: 1rem;
-  font-size: small;
-  font-weight: lighter;
+  font-size: large;
+  font-weight: 300;
 }
 
 .iconHeart {
-  width: 12px;
+  width: 16px;
 }
 
 .blueBox {
@@ -93,13 +95,14 @@
 /**************/
 
 .rightArea {
-  width: 45%;
+  width: 50%;
 }
 
 .titleMessage {
   font-weight: normal;
   text-align: center;
-  font-size: x-large;
+
+  font-size: 30px;
   margin: 1.5rem 15%;
 }
 
@@ -111,7 +114,7 @@
 
 .descriptionMessage {
   display: block;
-  font-size: small;
+  font-size: medium;
   margin-bottom: 0.4rem;
   color: #383D43;
 }
@@ -121,6 +124,7 @@
   margin-bottom: 1rem;
   padding: 4px;
   font-family: 'Sora', sans-serif;
+  font-size: medium;
 }
 
 .message {
@@ -130,6 +134,7 @@
   resize: none;
   padding: 4px;
   font-family: 'Sora', sans-serif;
+  font-size: medium;
 }
 
 .submitMessageButtonArea {
@@ -148,6 +153,7 @@
   padding: 0.3rem 1rem;
   color: #383D43;
   background-color: white;
+  font-size: medium;
 }
 
 .submitMessageButton:hover {

@@ -31,7 +31,7 @@ function Contact(){
           <img className={styles.backImage} src={contactImage} alt="Doe Agora" />
         </div>
         <div className={styles.donate}>
-          <p className={styles.textDonate}>Faça parte dessa transformação</p>
+          <h2 className={styles.textDonate}>Faça parte dessa transformação</h2>
           <a className={styles.buttonDonate} href="">Doe Agora <img className={styles.iconHeart} src={iconHeart} alt="emoji de coração" /></a>
         </div>
         <div className={styles.blueBox}></div>
@@ -41,13 +41,13 @@ function Contact(){
 
       {/* Forms */}
       <div className={styles.rightArea}>
-        <h3 className={styles.titleMessage}>Entre em contato conosco</h3>
+        <h2 className={styles.titleMessage}>Entre em contato conosco</h2>
         <form className={styles.form} onSubmit={sendEmail} >
           <label className={styles.descriptionMessage} for="email">Seu Email</label>
           <input className={styles.email} type="text" id="email" name="email" value={emailClient} required
            onChange={(e) => { setEmailClient(e.target.value); }} />
           <label className={styles.descriptionMessage} for="message">Escreva sua mensagem</label>
-          <textarea className={styles.message} id="message" name="message" rows="6" value={message} required
+          <textarea className={styles.message} id="message" name="message" rows="7" value={message} required
            onChange={(e) => { setMessage(e.target.value); }} ></textarea>
           <div className={styles.submitMessageButtonArea}>
             <button className={styles.submitMessageButton} type="submit" >Enviar</button>
