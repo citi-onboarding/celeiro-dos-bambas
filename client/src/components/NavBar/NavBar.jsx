@@ -29,8 +29,8 @@ function NavBar( {menu, setMenu} ) {
 
             <div className={styles.UlButton}>
             <ul className={styles.NavBarList}>
-              <li><a className = {styles.Assoc} href= "#Associacao" >A associação</a></li>
               <li ><a className = {styles.Impac} href= "#Impacto" >Impacto</a></li>
+              <li><a className = {styles.Mem} href= "#Membros" >Membros</a></li>
               <li ><a className = {styles.Parc} href= "#Parceiro" >Parceiros</a></li>
               <li ><a className = {styles.Contat} href= "#Contato" >Contato</a></li>
             </ul>

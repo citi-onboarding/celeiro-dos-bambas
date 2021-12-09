@@ -470,7 +470,7 @@ span {
   }
 }
 
-@media (max-height : 530px){
+@media (max-height : 0px){
   .impact{
     margin-bottom: 460px;
   }
