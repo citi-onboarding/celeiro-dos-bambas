@@ -1,4 +1,9 @@
 import Logo from './logo.png';
+import bannerimage from "./bannerimage.png";
+import mask from "./mask.png";
+
+
+
 import crianças from './crianças_impact.png'
 import crianças2 from './crianças_impact2.png'
 import cobrinha from './PurpleSnake.png'
@@ -55,4 +60,6 @@ export {
   vector3,
   vector4,
   horizontalLine,
+  bannerimage,
+  mask
 };
