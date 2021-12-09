@@ -27,6 +27,8 @@ import instagramButton from "./instagramButton.svg";
 import youtubeButton from "./youtubeButton.svg";
 import facebookButton from "./facebookButton.svg";
 
+import horizontalLine from "./horizontalLine.svg"
+
 export {
   miniLogo,
   contactImage,
@@ -51,5 +53,6 @@ export {
   vector1,
   vector2,
   vector3,
-  vector4
+  vector4,
+  horizontalLine,
 };

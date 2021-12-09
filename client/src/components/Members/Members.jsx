@@ -1,7 +1,8 @@
 // Basic Imports
 import React, { useEffect, useState } from "react";
-import './Members.css';
 import apiAxios from "../../services/api-axios";
+import './Members.css';
+import { horizontalLine } from "../../assets";
 import BoxMember from "./boxMember";
 
 // Carousel Dependences
@@ -12,43 +13,38 @@ import "slick-carousel/slick/slick-theme.css";
 
 function Members(){
 
-  // Arrows
-  function NextArrowCenter(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "red" }}
-        onClick={onClick}
-      />
-    );
-  }
-
-  function PrevArrowCenter(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "green" }}
-        onClick={onClick}
-      />
-    );
-  }
-
   // Load Members Data
   const [members, setMembers] = useState([]);
 
   const loadData = async () => {
     const res = await apiAxios.get('membros');
     setMembers(res.data);
-    let a = typeof members
-    console.log('A:')
-    console.log(a)
   };
 
   useEffect(()=>{
     loadData();
   }, []);
+
+  // Arrows
+  function NextArrowCenter(props) {
+    return (
+      <div
+        className={props.className}
+        onClick={props.onClick}
+        id={props.id}
+      />
+    );
+  }
+
+  function PrevArrowCenter(props) {
+    return (
+      <div
+        className={props.className}
+        onClick={props.onClick}
+        id={props.id}
+      />
+    );
+  }
 
   // Montar carrocel
   const settings = {
@@ -56,18 +52,17 @@ function Members(){
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 3,
-    nextArrow: <NextArrowCenter />,
+    slidesToScroll: 2,
+    nextArrow: <NextArrowCenter className="Prev-CenterCarousel" />,
     prevArrow: <PrevArrowCenter />,
   };
-  // Estilizar
 
   // Front
   return(
     <div id="members">
       <div class='topArea'>
         <h2 class='title'>Quem faz parte do celeiro</h2>
-        <img class='line' src="#" alt="#" />
+        <img class='horizontalLine' src={horizontalLine} alt="Sublinhado" />
       </div>
 
       <div className="carousel">
@@ -79,16 +74,14 @@ function Members(){
                          avatar={member.Avatar.url}/>
             );
           })}
-          <p>1</p>
-          <p>2</p>
-          <p>{members.length}</p>
-
         </Slider>
       </div>
 
-      <div className="bottomArea">
-        <p className="text">Lorem ipsum</p>
-        <button>Voluntarie-se</button>
+      <div class="bottomArea">
+        <p class="text">Venha fazer parte!</p>
+        <div className="buttomArea">
+          <button class="buttom">Voluntarie-se</button>
+        </div>
       </div>
     </div>
   );

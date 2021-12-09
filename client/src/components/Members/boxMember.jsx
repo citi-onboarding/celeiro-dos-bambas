@@ -1,14 +1,14 @@
 import React from 'react';
 
-// import './Datas.css';
+import styles from "./Card.module.css";
 
 export default class BoxMember extends React.Component{
   render(){
     return(
-      <div className="boxMember">
-        <h2>{this.props.nome}</h2>
-        <p>{this.props.cargo}</p>
-        <img src={this.props.avatar} alt="" />
+      <div className={styles.card}>
+        <p className={styles.cardName}>{this.props.nome}</p>
+        <img className={styles.cardAvatar} src={this.props.avatar} alt="" />
+        <p className={styles.cardRole}>{this.props.cargo}</p>
       </div>
     )
   }

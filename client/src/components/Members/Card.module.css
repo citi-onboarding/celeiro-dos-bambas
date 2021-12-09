@@ -1,0 +1,11 @@
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 3.63327px 3.63327px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  width: 60%;
+  height: 100%;
+}
+
+.card .cardAvatar {
+  width: 50%;
+}

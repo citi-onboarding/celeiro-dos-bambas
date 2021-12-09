@@ -1,13 +1,70 @@
+/***********/
+/* General */
+/***********/
+
 #members {
+  display: flexbox;
+  max-width: 1140px;
   width: 80%;
   height: 100px;
   margin: 1rem 10%;
+  align-content: center;
 }
 
+/************/
+/* Top Area */
+/************/
+
 #members .topArea {
-  margin-bottom: 4rem;
+  display: block;
+  margin: 4rem 0;
 }
+
+#members .topArea .title {
+  text-transform: uppercase;
+  font-family: 'Sora', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+}
+
+#members .topArea .horizontalLine {
+  width: 30%;
+  margin: 1rem 35%;
+}
+
+/***********/
+/* Carosel */
+/***********/
+
+
+
+/***************/
+/* Bootom Area */
+/***************/
 
 #members .bottomArea {
   margin-top: 4rem;
+  display: block;
+}
+
+#members .bottomArea .text {
+  text-align: center;
+}
+
+#members .bottomArea .buttomArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#members .bottomArea .buttomArea .buttom {
+  margin-top: 1rem;
+  background: #283592;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #fff;
+  font-size: medium;
+  border-width: 0;
 }
