@@ -24,7 +24,7 @@ function Contact(){
 
   // Front
   return (
-    <div className={styles.Contact}>
+    <div id="Contato" className={styles.Contact}>
     <div className={styles.allContent}>
       <div className={styles.leftArea}>
         <div className={styles.image}>

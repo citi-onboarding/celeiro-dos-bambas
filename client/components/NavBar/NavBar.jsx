@@ -24,17 +24,17 @@ function NavBar( {menu, setMenu} ) {
       <header className="fontNavbar" id={styles.Navbar}>
           <nav className={`container ${styles.Menu}`}>
             <div className={styles.LogoNav}>
-              <img className={styles.LogoImg} src = {Logo} alt="Logo Celeiro"/>
+            <a href= "#Banner" ><img className={styles.LogoImg} src = {Logo} alt="Logo Celeiro"/></a>
             </div>
 
             <div className={styles.UlButton}>
             <ul className={styles.NavBarList}>
-              <li><a className = {styles.Assoc} href= "#Associacao" >A associação</a></li>
               <li ><a className = {styles.Impac} href= "#Impacto" >Impacto</a></li>
+              <li><a className = {styles.Mem} href= "#Membros" >Membros</a></li>
               <li ><a className = {styles.Parc} href= "#Parceiro" >Parceiros</a></li>
               <li ><a className = {styles.Contat} href= "#Contato" >Contato</a></li>
             </ul>
-             <a className={styles.buttonDonate} href="">Doe Agora <img className={styles.iconHeart} src={iconHeart} alt="emoji de coração" /></a>
+             <a className={styles.buttonDonateNav} href="">Doe Agora <img className={styles.iconHeart} src={iconHeart} alt="emoji de coração" /></a>
              </div>
           </nav>
 

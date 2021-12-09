@@ -4,11 +4,15 @@
 /* All Contact Section */
 /***********************/
 
+
 .Contact {
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-family: 'Sora', sans-serif;
+  padding-bottom: 115px;
+  scroll-behavior: smooth;
+
 }
 
 .allContent {
@@ -16,6 +20,7 @@
   max-width: 1140px;
   justify-content: space-around;
 }
+
 
 /*************/
 /* Left Area */
