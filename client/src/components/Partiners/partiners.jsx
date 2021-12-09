@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from "react";
 import './slick.css';
 import apiAxios from "../../services/api-axios";
-import styles from "./partiners.module.css"
+import styles from "./Partiners.module.css"
 import {vector11} from "../../assets/index"
-// import BoxMember from "./boxMember";
+import Card from "./Card/Card";
 
 // Carousel Dependences
 import Slider from 'react-slick';
@@ -20,7 +20,7 @@ function Partiners(){
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "grey" }}
+        style={{ ...style, display: "block" }}
         onClick={onClick}
       />
     );
@@ -31,7 +31,7 @@ function Partiners(){
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "grey" }}
+        style={{ ...style, display: "block" }}
         onClick={onClick}
       />
     );
@@ -41,7 +41,6 @@ function Partiners(){
   const [partiners, setPartiners] = useState([]);
   const [name, setName] = useState([]);
   const [description, setDescription] = useState([]);
-  var cont = 0;
 
   const loadData = async () => {
     const res = await apiAxios.get('parceiros');
@@ -56,13 +55,24 @@ function Partiners(){
   // Montar carrocel
   const settings = {
     dots: true,
+    customPaging: dots => (
+      <div
+        style={{
+          backgroundColor: "#C4C4C4",
+          borderRadius: "5.5px",
+          width: "19px",
+          height: "11px"
+        }}
+      >
+      </div>
+    ),
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <NextArrowCenter />,
     prevArrow: <PrevArrowCenter />,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 10000,
     pauseOnHover: true,
     afterChange: (current) => {
@@ -73,6 +83,8 @@ function Partiners(){
   };
 
   return(
+  <div className={styles.main}>
+
     <div id="partiners" className={styles.container}>
       <p className={styles.title}>Apoiadores</p>
       <img src={vector11}
@@ -86,11 +98,11 @@ function Partiners(){
           <p className={styles.description}>{description}</p>
         </div>
 
-        <div className={styles.slidercontainer}>
+        <div className="carousel">
           <Slider {...settings}>
             {partiners.map( (partiner) => {
               return (
-                <img className="logo" src={partiner.Imagem.url} alt={partiner.Nome} />
+                <Card avatar={partiner.Imagem.url}></Card>
                 );
               })}
           </Slider>
@@ -100,6 +112,7 @@ function Partiners(){
 
 
     </div>
+  </div>
   );
 };
 

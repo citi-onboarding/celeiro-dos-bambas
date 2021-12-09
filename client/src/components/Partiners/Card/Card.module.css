@@ -1,0 +1,25 @@
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 3.63327px 3.63327px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  width: 308px;
+  height: 308px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+  margin: 16px;
+  padding: 1rem;
+  box-shadow: 1px 1px 10px 0px #00000026;
+}
+
+.card .cardAvatar {
+  align-items: center;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  border-top-right-radius: 23%;
+  border-bottom-left-radius: 23%;
+
+
+}
