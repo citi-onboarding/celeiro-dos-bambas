@@ -1,18 +1,11 @@
 #partiners {
-  width: 80%;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   margin: 1rem 10%;
-}
-
-#partiners .topArea {
-  margin-bottom: 4rem;
-}
-
-#partiners .bottomArea {
-  margin-top: 4rem;
 }
 
 #partiners .logo {
   width: 3rem;
   height: 3rem;
 }
+

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import './slick.css';
 import apiAxios from "../../services/api-axios";
 import styles from "./partiners.module.css"
+import {vector11} from "../../assets/index"
 // import BoxMember from "./boxMember";
 
 // Carousel Dependences
@@ -38,6 +39,9 @@ function Partiners(){
 
   // Load Members Data
   const [partiners, setPartiners] = useState([]);
+  const [name, setName] = useState([]);
+  const [description, setDescription] = useState([]);
+  var cont = 0;
 
   const loadData = async () => {
     const res = await apiAxios.get('parceiros');
@@ -59,24 +63,31 @@ function Partiners(){
     nextArrow: <NextArrowCenter />,
     prevArrow: <PrevArrowCenter />,
     autoplay: true,
-    autoplaySpeed: 1000,
-    pauseOnHover: true
-  };
-  // Estilizar
+    autoplaySpeed: 10000,
+    pauseOnHover: true,
+    afterChange: (current) => {
+      setName(partiners[current].Nome);
+      setDescription(partiners[current].Papel);
+    }
 
-  // Front
+  };
+
   return(
     <div id="partiners" className={styles.container}>
-      <p>Apoiadores</p>
+      <p className={styles.title}>Apoiadores</p>
+      <img src={vector11}
+          alt=""
+          width="323px"
+          height="19px" />
       <div className={styles.carousel}>
 
         <div className={styles.text}>
-          <p className={styles.name}></p>
-          <p className={styles.description}></p>
+          <p className={styles.name}>{name}</p>
+          <p className={styles.description}>{description}</p>
         </div>
 
-        <div className="carousel">
-          <Slider className="slider" {...settings}>
+        <div className={styles.slidercontainer}>
+          <Slider {...settings}>
             {partiners.map( (partiner) => {
               return (
                 <img className="logo" src={partiner.Imagem.url} alt={partiner.Nome} />
