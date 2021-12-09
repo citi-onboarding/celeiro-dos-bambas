@@ -24,7 +24,7 @@ function Banner() {
   },[]);
 
   return (
-      <div className={styles.container}>
+      <div id="Banner" className={styles.container}>
           <img className={styles.backImageMask} src={mask} alt = "mascara da foto" />
           <img className={styles.backImageBanner} src={image} alt="Foto das crianças e voluntários do Celeiro de Bambas" />
           <spam className = {styles.text}>

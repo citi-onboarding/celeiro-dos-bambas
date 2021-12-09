@@ -24,7 +24,7 @@ function NavBar( {menu, setMenu} ) {
       <header className="fontNavbar" id={styles.Navbar}>
           <nav className={`container ${styles.Menu}`}>
             <div className={styles.LogoNav}>
-              <img className={styles.LogoImg} src = {Logo} alt="Logo Celeiro"/>
+            <a href= "#Banner" ><img className={styles.LogoImg} src = {Logo} alt="Logo Celeiro"/></a>
             </div>
 
             <div className={styles.UlButton}>
