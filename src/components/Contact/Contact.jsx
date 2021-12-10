@@ -32,7 +32,7 @@ function Contact(){
         </div>
         <div className={styles.donate}>
           <h2 className={styles.textDonate}>Faça parte dessa transformação</h2>
-          <a className={styles.buttonDonate} href="">Doe Agora <img className={styles.iconHeart} src={iconHeart} alt="emoji de coração" /></a>
+          <a className={styles.buttonDonate} href="https://celeirodebambas.portalsolidario.com.br/">Doe Agora <img className={styles.iconHeart} src={iconHeart} alt="emoji de coração" /></a>
         </div>
         <div className={styles.blueBox}></div>
       </div>

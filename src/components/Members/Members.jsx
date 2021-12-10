@@ -61,7 +61,7 @@ function Members(){
 
   // Front
   return(
-    <div className="God">
+    <div className="God" id="Membros">
       <div id="members">
         <div class='topArea'>
           <h2 class='title'>Quem faz parte do celeiro</h2>

@@ -34,7 +34,7 @@ function NavBar( {menu, setMenu} ) {
               <li ><a className = {styles.Parc} href= "#Parceiro" >Parceiros</a></li>
               <li ><a className = {styles.Contat} href= "#Contato" >Contato</a></li>
             </ul>
-             <a className={styles.buttonDonateNav} href="">Doe Agora <img className={styles.iconHeart} src={iconHeart} alt="emoji de coração" /></a>
+             <a className={styles.buttonDonateNav} href="https://celeirodebambas.portalsolidario.com.br/">Doe Agora <img className={styles.iconHeart} src={iconHeart} alt="emoji de coração" /></a>
              </div>
           </nav>
 
