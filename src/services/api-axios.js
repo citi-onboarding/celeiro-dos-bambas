@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiAxios = axios.create({
-  baseURL: "https://celeiro-bambas-server.herokuapp.com/",
+  baseURL: "http://localhost:1337/",
 });
 
 export default apiAxios;
