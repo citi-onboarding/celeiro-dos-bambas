@@ -72,7 +72,7 @@ function Partiners(){
     slidesToScroll: 1,
     nextArrow: <NextArrowCenter />,
     prevArrow: <PrevArrowCenter />,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 10000,
     pauseOnHover: true,
     afterChange: (current) => {
@@ -83,7 +83,7 @@ function Partiners(){
   };
 
   return(
-  <div className={styles.main}>
+  <div className={styles.main} id="Parceiro">
 
     <div id="partiners" className={styles.container}>
       <p className={styles.title}>Apoiadores</p>
