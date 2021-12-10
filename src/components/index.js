@@ -1,13 +1,17 @@
 import Footer from "./Footer/Footer";
+import Impact from "./Impact";
 import NavBar from "./NavBar/NavBar";
 import Banner from "./Banner/Banner";
-import Impact from './Impact';
 import Contact from "./Contact/Contact";
+import Partiners from "./Partiners/partiners";
+import Members from './Members'
 
 export {
-  Footer,
-  Contact,
+  Partiners,
+  Members,
   Impact,
+  Contact,
+  Footer,
   NavBar,
   Banner
 };

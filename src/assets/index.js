@@ -27,10 +27,13 @@ import iconHeart from './icon_heart.png';
 
 import miniLogo from "./miniLogo.svg";
 import logoCeleiro from "./logo-celeiro.png";
-import fundo from "./fundo.png";
+import fundo from "./fundo.svg";
 import instagramButton from "./instagramButton.svg";
 import youtubeButton from "./youtubeButton.svg";
 import facebookButton from "./facebookButton.svg";
+
+import horizontalLine from "./horizontalLine.svg"
+import share from './share.svg'
 
 export {
   miniLogo,
@@ -57,6 +60,8 @@ export {
   vector2,
   vector3,
   vector4,
+  horizontalLine,
   bannerimage,
-  mask
+  mask,
+  share
 };

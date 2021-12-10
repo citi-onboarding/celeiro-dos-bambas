@@ -1,0 +1,31 @@
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 3.63327px 3.63327px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.card .cardAvatar {
+  height: 100px;
+  border-top-right-radius: 23%;
+  border-bottom-left-radius: 23%;
+  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.2));
+}
+
+.cardName{
+  margin: 1.2rem 0 1rem;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cardRole{
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
