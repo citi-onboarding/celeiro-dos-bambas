@@ -4,7 +4,7 @@ import { Footer, Partiners } from './components/index';
 import { Impact } from './components/index';
 import { Contact} from './components/index';
 import {Banner} from './components/index';
-import {NavBar} from './components/index';
+import {NavBar , Members} from './components/index';
 
 
 const App = () => {
@@ -13,6 +13,7 @@ const App = () => {
       <NavBar/>
       <Banner/>
       <Impact />
+      <Members />
       <Partiners/>
       <Contact />
       <Footer />

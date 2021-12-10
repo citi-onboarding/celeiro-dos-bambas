@@ -1,96 +1,30 @@
-// Basic Imports
-import React, { useEffect, useState } from "react";
-import './slick.css';
+import React, { useState, useEffect } from "react";
+import styles from "./partiners.module.css";
 import apiAxios from "../../services/api-axios";
-import styles from "./Partiners.module.css"
-import {vector11} from "../../assets/index"
-import Card from "./Card/Card";
-
-// Carousel Dependences
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 
-function Partiners(){
+const Partiners = () => {
 
-  // Arrows
-  function NextArrowCenter(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block" }}
-        onClick={onClick}
-      />
-    );
-  }
-
-  function PrevArrowCenter(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block" }}
-        onClick={onClick}
-      />
-    );
-  }
-
-  // Load Members Data
-  const [partiners, setPartiners] = useState([]);
   const [name, setName] = useState([]);
   const [description, setDescription] = useState([]);
+  const [logo, setLogo] = useState([]);
 
   const loadData = async () => {
-    const res = await apiAxios.get('parceiros');
-    setPartiners(res.data);
-
+    const {data} = await apiAxios.get('parceiros');
+    console.log(data)
+    setName(data[0].Nome);
+    setDescription(data[0].Papel);
+    setLogo(data[0].Imagem.url);
   };
 
   useEffect(()=>{
     loadData();
-  }, []);
+  });
 
-  // Montar carrocel
-  const settings = {
-    dots: true,
-    customPaging: dots => (
-      <div
-        style={{
-          backgroundColor: "#C4C4C4",
-          borderRadius: "5.5px",
-          width: "19px",
-          height: "11px"
-        }}
-      >
-      </div>
-    ),
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    nextArrow: <NextArrowCenter />,
-    prevArrow: <PrevArrowCenter />,
-    autoplay: false,
-    autoplaySpeed: 10000,
-    pauseOnHover: true,
-    afterChange: (current) => {
-      setName(partiners[current].Nome);
-      setDescription(partiners[current].Papel);
-    }
+  return (
+    <div className={styles.container}>
+      <p>Apoiadores</p>
 
-  };
-
-  return(
-  <div className={styles.main}>
-
-    <div id="partiners" className={styles.container}>
-      <p className={styles.title}>Apoiadores</p>
-      <img src={vector11}
-          alt=""
-          width="323px"
-          height="19px" />
       <div className={styles.carousel}>
 
         <div className={styles.text}>
@@ -98,23 +32,14 @@ function Partiners(){
           <p className={styles.description}>{description}</p>
         </div>
 
-        <div className="carousel">
-          <Slider {...settings}>
-            {partiners.map( (partiner) => {
-              return (
-                <Card avatar={partiner.Imagem.url}></Card>
-                );
-              })}
-          </Slider>
+        <div>
+          <img className={styles.logo} src={logo} alt="logo do parceiro" />
         </div>
 
       </div>
 
-
     </div>
-  </div>
-  );
+  )
 };
-
 
 export default Partiners;
